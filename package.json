@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.3",
+    "@heroicons/react": "^2.2.0",
     "leaflet": "^1.9.4",
+    "lucide-react": "^0.510.0",
+    "mongodb": "^6.16.0",
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -19,6 +23,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/bcrypt": "^5.0.2",
     "@types/leaflet": "^1.9.17",
     "@types/node": "^20",
     "@types/react": "^19",

@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import Navbar from './componets/Navbar';
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -39,6 +40,8 @@ export default function Home() {
   
 
   return (
+    <>
+    <Navbar />
     <main className="min-h-screen bg-gradient-to-br from-purple-600 to-pink-500 text-white">
       {/* Hero Section */}
       <section className="py-20 px-6 md:px-20 flex flex-col md:flex-row items-center justify-between gap-10">
@@ -95,5 +98,7 @@ export default function Home() {
         </div>
       </section>
     </main>
+    </>
+
   );
 }
