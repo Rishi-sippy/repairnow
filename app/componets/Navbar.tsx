@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full bg-white shadow-md px-6 py-4 flex items-center justify-between">
+      <nav className="w-[1260px] bg-white shadow-md px-6 py-4 flex items-center justify-between">
         <div className="text-xl font-bold text-purple-700">
           <Link href="/">Cold Strangers Party</Link>
         </div>
