@@ -44,7 +44,7 @@ export default function Home() {
     {/* Hero Section */}
     <section className="relative pt-20 px-6 md:px-20 w-full">
       {/* Sticky Navbar */}
-      <div className="fixed top-4 left-0 right-0 mx-auto max-w-6xl z-50   flex justify-center rounded-xl px-4 py-2">
+      <div className="fixed top-0 left-0 right-0 mx-auto w-full z-50   flex justify-center">
   <Navbar />
 </div>
 
@@ -56,7 +56,6 @@ export default function Home() {
           <p className="mb-6 text-lg">
             Join the most thrilling parties with total strangers. Submit your details and we’ll send you party invites in your city!
           </p>
-
           <form onSubmit={handleSubmit} className="bg-white text-black p-6 rounded-xl shadow-lg space-y-4">
             {/* Form fields */}
             <input type="text" name="name" placeholder="Your Name" required onChange={handleChange} className="w-full p-2 rounded-md border" />
