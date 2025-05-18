@@ -1,10 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
 import { UserIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
-import { SparklesIcon } from '@heroicons/react/24/solid';
 import AuthModal, { User } from './AuthModal';
 
 export default function Navbar() {
@@ -17,7 +15,7 @@ export default function Navbar() {
     <>
 
       <nav className="w-full bg-gradient-to-r from-[#1d1d1d] to-[#2b2b2b] px-6 py-4 flex items-center justify-center shadow-md nav-bg">
-        <div className='flex justify-between w-[1260px]'>
+        <div className='flex justify-between w-[1280px]'>
         {/* Logo */}
         <div className="flex items-center gap-2">
           <span className="text-white text-xl font-semibold">StrangyP!</span>
@@ -44,7 +42,7 @@ export default function Navbar() {
           <Link href="/host">
             <button className="flex items-center gap-2 border border-[#ff2d55] text-white px-4 py-2 rounded-lg bg-[#800020]/20 hover:bg-[#800020]/40 transition text-sm font-medium">
               Host A Party
-              <SparklesIcon className="h-4 w-4 text-[#ff2d55]" />
+              {/* <SparklesIcon className="h-4 w-4 text-[#ff2d55]" /> */}
             </button>
           </Link>
 

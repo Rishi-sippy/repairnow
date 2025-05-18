@@ -9,8 +9,6 @@ const options = {};
 
 let client: MongoClient;
 let clientPromise: Promise<MongoClient>;
-
-// eslint-disable-next-line no-var
 declare global {
     // eslint-disable-next-line no-var
   var _mongoClientPromise: Promise<MongoClient> | undefined;
