@@ -15,7 +15,7 @@ export default function Navbar() {
     <>
 
       <nav className="w-full bg-gradient-to-r from-[#1d1d1d] to-[#2b2b2b] px-6 py-4 flex items-center justify-center shadow-md nav-bg">
-        <div className='flex justify-between w-[1280px]'>
+        <div className='flex justify-between w-[1120px]'>
         {/* Logo */}
         <div className="flex items-center gap-2">
           <span className="text-white text-xl font-semibold">StrangyP!</span>

@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Navbar from './componets/Navbar';
 import Link from 'next/link';
 import PartyList from './componets/PartyList';
+import Footer from './componets/Footer';
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -17,12 +18,12 @@ export default function Home() {
     drinks: 'all',
   });
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
@@ -57,49 +58,27 @@ export default function Home() {
 
 
         {/* Hero Content */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-10 mt-10 py-20">
-          <div className="max-w-xl">
-            <h1 className="text-5xl font-bold mb-4">Welcome to Cold Strangers Party 🎉</h1>
-            <p className="mb-6 text-lg">
-              Join the most thrilling parties with total strangers. Submit your details and we’ll send you party invites in your city!
-            </p>
-            <Link href="/host">
-              <button className="flex items-center gap-2 border border-[#ff2d55] text-white px-4 py-2 rounded-lg bg-[#800020]/20 hover:bg-[#800020]/40 transition text-sm font-medium">
-                Find A Party
-                {/* <SparklesIcon className="h-4 w-4 text-[#ff2d55]" /> */}
-              </button>
-            </Link>
-          </div>
+        <div className="w-full flex justify-center mt-10 py-20">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-10 w-full max-w-[1120px">
+            <div className="max-w-xl">
+              <h1 className="text-5xl font-bold mb-4">Welcome to Cold Strangers Party 🎉</h1>
+              <p className="mb-6 text-lg">
+                Join the most thrilling parties with total strangers. Submit your details and we’ll send you party invites in your city!
+              </p>
+              <Link href="/host">
+                <button className="flex items-center gap-2 border border-[#ff2d55] text-white px-4 py-2 rounded-lg bg-[#800020]/20 hover:bg-[#800020]/40 transition text-sm font-medium">
+                  Find A Party
+                  {/* <SparklesIcon className="h-4 w-4 text-[#ff2d55]" /> */}
+                </button>
+              </Link>
+            </div>
 
-          <div className="hidden md:block">
-            <Image src="/cheers-1.jpg" alt="Party Crowd" width={500} height={500} className="rounded-xl shadow-lg" />
-            {/* <form onSubmit={handleSubmit} className="bg-white text-black p-6 rounded-xl shadow-lg space-y-4">
-              {/* Form fields */}
-            {/* <input type="text" name="name" placeholder="Your Name" required onChange={handleChange} className="w-full p-2 rounded-md border" />
-              <input type="tel" name="phone" placeholder="Phone Number" required onChange={handleChange} className="w-full p-2 rounded-md border" />
-              <input type="email" name="email" placeholder="Email" required onChange={handleChange} className="w-full p-2 rounded-md border" />
-              <input type="text" name="city" placeholder="Party City" required onChange={handleChange} className="w-full p-2 rounded-md border" />
-              <input type="text" name="houseNo" placeholder="House No" required onChange={handleChange} className="w-full p-2 rounded-md border" /> */}
-
-            {/* <div className="flex flex-col md:flex-row gap-4">
-                <select name="food" onChange={handleChange} className="w-full p-2 rounded-md border">
-                  <option value="veg">Veg</option>
-                  <option value="nonveg">Non-Veg</option>
-                  <option value="both">Both</option>
-                </select>
-                <select name="drinks" onChange={handleChange} className="w-full p-2 rounded-md border">
-                  <option value="all">All</option>
-                  <option value="soft">Soft Drinks Only</option>
-                  <option value="none">No Drinks</option>
-                </select>
-              </div> */}
-
-            {/* <button type="submit" className="bg-purple-700 hover:bg-purple-900 text-white w-full py-2 rounded-md">
-                Submit & Get Invited
-              </button> */}
-            {/* </form>  */}
+            <div className="hidden md:block">
+              <Image src="/cheers-1.jpg" alt="Party Crowd" width={500} height={500} className="rounded-xl shadow-lg" />
+            </div>
           </div>
         </div>
+
       </section>
 
 
@@ -123,6 +102,7 @@ export default function Home() {
         </div>
 
       </section>
+      <Footer />
     </main>
 
   );
