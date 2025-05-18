@@ -59,7 +59,7 @@ export default function Home() {
 
         {/* Hero Content */}
         <div className="w-full flex justify-center mt-10 py-20">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-10 w-full max-w-[1120px">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-10 w-full max-w-[1120px]">
             <div className="max-w-xl">
               <h1 className="text-5xl font-bold mb-4">Welcome to Cold Strangers Party 🎉</h1>
               <p className="mb-6 text-lg">
