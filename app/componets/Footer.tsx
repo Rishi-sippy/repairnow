@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between gap-10">
         {/* Logo & Branding */}
         <div className="flex flex-col gap-4">
-        StrangyP!
+        Stranger's Party
         </div>
 
         {/* Platform */}

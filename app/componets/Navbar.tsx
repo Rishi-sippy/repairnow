@@ -18,7 +18,7 @@ export default function Navbar() {
         <div className='flex justify-between w-[1120px]'>
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <span className="text-white text-xl font-semibold">StrangyP!</span>
+          <span className="text-white text-xl font-semibold">Stranger's Party</span>
         </div>
 
         {/* Search Bar */}
