@@ -6,6 +6,7 @@ import Navbar from './componets/Navbar';
 import Link from 'next/link';
 import PartyList from './componets/PartyList';
 import Footer from './componets/Footer';
+import NeonCarouselNumbers from './componets/CardCar';
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -58,7 +59,15 @@ export default function Home() {
 
 
         {/* Hero Content */}
-        <div className="w-full flex justify-center mt-10 py-20">
+        <div className="w-full flex justify-center mt-10 py-20 bg-video">
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            src="https://www.storyblocks.com/video/stock/group-of-friends-having-fun-at-christmas-party-together-smnmrfkfgizevpkxw"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
           <div className="flex flex-col md:flex-row items-center justify-between gap-10 w-full max-w-[1120px]">
             <div className="max-w-xl">
               <h1 className="text-5xl font-bold mb-4">Welcome to Cold Strangers Party 🎉</h1>
@@ -100,6 +109,10 @@ export default function Home() {
             </div>
           ))}
         </div>
+
+      </section>
+      <section className="bg-black text-black py-16 px-6 md:px-20">
+      <NeonCarouselNumbers />
 
       </section>
       <Footer />
