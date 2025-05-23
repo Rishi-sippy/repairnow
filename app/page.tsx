@@ -84,14 +84,14 @@ export default function Home() {
 
 
       {/* Gallery Section */}
-      <section className="bg-white text-black py-16 px-6 md:px-20">
+      <section className="bg-black text-black py-16 px-6 md:px-20">
         <PartyList />
 
       </section>
-      <section className="bg-white text-black py-16 px-6 md:px-20">
-        <h2 className="text-3xl font-bold mb-6 text-center">Party Locations 📸</h2>
+      <section className="bg-black text-black py-16 px-6 md:px-20">
+        <h2 className="text-3xl font-bold mb-6 text-white text-center">What is happening in the Party📸</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {['New York', 'Los Angeles', 'London', 'Berlin', 'Tokyo', 'Delhi', 'Paris', 'Sydney'].map((city) => (
+          {['Food', 'Drinks', 'Music', 'Dance', 'Fun', 'Singing', 'Love', 'Romance'].map((city) => (
             <div
               key={city}
               className="cursor-pointer bg-white h-48 flex items-center justify-center text-xl font-semibold rounded-lg shadow-[8px_8px_20px_rgba(0,0,0,0.15)] transform transition hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.2)]"
